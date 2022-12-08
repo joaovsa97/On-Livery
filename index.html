@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBTech - Página Inicial</title>
+    <link rel="stylesheet" href="css/components-style.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--HEADER - NAVBAR-->
+    <header>
+            <!-- logo será um link pra "home" -->
+                <div class="logo"><a href="index.html"><img src="images/FB-tech 1.svg" alt=""></a></div>
+                <!-- grupo dos itens de navegação -->
+                <div class="group">
+                    <!-- links para páginas -->
+                    <ul class="navigation">
+                        <li><a class="selected" href="index.html">HOME</a></li>
+                        <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                        <li><a href="Startups.html">STARTUPS</a></li>
+                        <li><a href="Contato.html">CONTATO</a></li>
+                        <li><a href="login.html">ENTRAR</a></li>
+                    </ul>
+                    <!-- campo de busca -->
+                    <div class="search">
+                        <span class="icon">
+                            <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                            <ion-icon name="close-circle-outline" class="closeBtn"></ion-icon>
+                        </span>
+                    </div>
+                    <!-- ícone do menu mobile -->
+                    <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+                </div>
+                <!-- campo de busca animado que sobrepõe a navbar quando ativado-->
+                <div class="searchBox">
+                    <input type="text" placeholder="Buscar...">
+                </div>
+    </header>
+    <!--HEADER - NAVBAR-->
+
+    <!--MAIN - CARDS-->
+    <main>
+        <section class="boas-vindas">
+            <div class="img-boas-vindas">
+                <img src="images/FBTECH - INTRO.svg" alt="">
+            </div>
+
+            <!-- <div class="texto">
+                <h1>BOAS VINDAS</h1>
+                <h2>Seja bem-vindo(a) à Incubadora de Startups da Fundação Bradesco!</h2>
+                </div> -->
+        </section>
+        <div class="resumo">
+            <section class="card quem-somos">
+                <div class="card-head"><h3>QUEM SOMOS</h3></div>
+                <div class="card-center"><p>Saiba mais da nossa história, nossa missão, visão e os valores e projetos!</p></div>
+                <a href="quemsomos.html"><div class="card-foot">Acessar</div></a>
+            </section>
+
+            <section class="card startups">
+                <div class="card-head"><h3>STARTUPS</h3></div>
+                <div class="card-center"><p>Conheça nossas Startups incubadas, seus integrantes e seus portifólios individuais.</p></div>
+                <a href="Startups.html"><div class="card-foot">Acessar</div></a>
+            </section>
+
+            <section class="card contato">
+                <div class="card-head"><h3>ENTRE EM CONTATO</h3></div>
+                <div class="card-center"><p>Deseja saber mais? Deseja solicitar uma consultoria personalizada? Entre em contato e iremos lhe ajudar.</p></div>
+                <a href="Contato.html"><div class="card-foot">Acessar</div></a>
+            </section>   
+        </div>
+        <section class="novidades">
+            
+            <h2>NOTÍCIAS</h2>
+
+            <div class="nov-content">
+                <div class="nov">
+                    <div class="novidade-img">
+                        <img src="images/logo/FB-tech 1.svg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Inauguração do incubadora</h1>
+                        <p>Fundação Bradesco inaugura Incubadora de Startups, onde as emrpesas incubadas são suas próprias turmas.</p>
+                    </div>
+                    <a href="#">Acessar</a>
+                </div>
+                <div class="nov">
+                    <div class="novidade-img">
+                        <img src="images/placeholders/certificados.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Fundação Bradesco oferece mais de 80 certificações</h1>
+                        <p>Fundação Bradesco oferece mais de 80 certificações de cursos online, acesse e saiba mais.</p>
+                    </div>
+                    <a href="#">Acessar</a>
+                </div>
+                <div class="nov">
+                    <div class="novidade-img">
+                        <img src="images/placeholders/News+Round+Up+photo.jpg" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Emlur e Fundação Bradesco unidos para uma causa ambiental</h1>
+                        <p>Emlur recebe estudantes da Fundação Bradesco para ação de educação ambiental nesta sexta-feira</p>
+                    </div>
+                    <a href="#">Acessar</a>
+                </div>
+                <div class="nov">
+                    <div class="novidade-img">
+                        <img src="images/UFC FB img.png" alt="">
+                    </div>
+                    <div class="texto">
+                        <h1>Parceria entre UFC e Fundação Bradesco</h1>
+                        <p>A programação incluiu  um mapeamento das possíveis áreas, dentre as quais são educação básica, capacitação profissional e empreendedorismo.</p>
+                    </div>
+                    <a href="#">Acessar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--MAIN - CARDS-->
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">
+                <h3>_FBTech</h3>
+                
+            </div>
+            <a href="#">Privacidade</a>
+            <a href="#">Termos e Condições de uso</a>
+            <a href="#">Suporte</a>
+        </div>
+        <ul class="socials">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-discord"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 _FBtech. designed by <span>On-Livery</span></p>
+    </div>
+    </footer>
+    <!--FOOTER-->
+
+    <script src="scripts/components.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

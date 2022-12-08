@@ -1,0 +1,97 @@
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contxt{
+    text-align: center;
+    font-size: 2.5em;
+    padding: 30px;
+    color: white;
+    margin: 50px;
+    letter-spacing: 20px;
+}
+
+
+.register-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 6px;
+    width: 100%;
+}
+
+
+.form-container form .user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+form .user-details .input-box {
+    width: calc(100%/ 2-20px);
+    margin: 10px 0 10px 0;
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 200;
+    margin-bottom: 10px;
+   
+}
+.user-details .input-box .details::after {
+    display: block;
+    content: '';
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #cc092f;
+
+}
+
+.user-details .input-box input {
+    border: #656565 solid 1px;
+    border-radius: 15px;
+    height: 45px;
+    width: 100%;
+    padding: 10px;
+}
+
+.user-details .input-box #formarea {
+    border: #656565 solid 1px;
+    border-radius: 15px;
+    min-height: 160px;
+    width: 100%;
+    padding: 10px;
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+button {
+    border: rgba(0, 0, 0, 0.185) 1px solid;
+    background-color: rgb(222, 204, 255);
+    border-radius: 15px ;
+    padding: 15px;
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #cc092f;
+    color: white;
+}
+
+

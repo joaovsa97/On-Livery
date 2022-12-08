@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
+
+
+:root {
+    --blue: #4E459A;
+    --blue-marinho: #383461;
+    --light-blue:#948ACF;
+    --orange: #E89320;
+    --light-orange: #D09948;
+    --dark-orange: #B98033;
+    --light-red: #D06948;
+    --satur-orange: #Ec930E;
+ }
+
+ * {
+    font-family:sans-serif;
+    font-weight: 1rem;
+    
+    letter-spacing: 0;
+ }
+
+/* 
+    background set - start
+  */
+body
+{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/backgrounds/ONLIVERY-PAGE-SEM-MONTANHA.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 50%;
+}
+
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 0.5s ease-in;
+  }
+  .active.fade-left {
+    animation: fade-left 0.5s ease-in;
+  }
+  .active.fade-right {
+    animation: fade-right 0.5s ease-in;
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* 
+    background set - end 
+  */
+
+
+            /* 
+            ============================
+                content main - start
+            ============================
+            */
+
+.container{
+    margin: 0 30px;
+}
+
+.inicio
+{
+    background-image: url(../images/logo/LOGO-ON-LIVERY\ \ SOMBREADO.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex: 1;
+    margin-top: 80px;
+    max-width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+}
+
+.texto
+{
+    letter-spacing: 0;
+    background-image: url(../images/backgrounds/GRADIENT-onlivery.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    flex: 1;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 30px;
+    margin: 50px;
+    letter-spacing: 20px;
+    border-radius: 20px;
+    text-align: center;
+    overflow: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.texto::-webkit-scrollbar{
+    display: none;
+}
+
+.content::-webkit-scrollbar{
+    display: none;
+}
+
+h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 30px;
+    color: #383461;
+}
+
+h2{
+    font-size: 1.1rem;
+    margin: 10px;
+    text-align: start;
+    color: var(--blue-marinho);
+}
+
+.texto p {
+    font-size: 1em;
+    color: var(--blue-marinho);
+    font-weight: 500;
+    
+}
+
+.membros{
+    margin: 0 50px;
+}
+
+.texto-membros {
+    letter-spacing: 0;
+    background-image: url(../images/backgrounds/GRADIENT-onlivery.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    flex: 1;
+    font-size: 5em;
+    letter-spacing: 2px;
+    margin: 30px;
+    color: #383461;
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    overflow: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+============
+CARD -START
+============
+*/
+.secao-card{
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    gap: 10px;
+    background-color: unset;
+}
+
+.card {
+    border-radius: 16px;
+    cursor: pointer;
+    height: 100%;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-image: url(../images/backgrounds/GRADIENT-onlivery.png);
+    transition: all .5s;
+}
+
+.content{
+    display: none;
+}
+
+.title{
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.card:hover .content {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    height: 115%;
+    width: 100%;
+    transition: all .5s;
+    position: absolute;
+    box-sizing: border-box;
+    overflow: auto;
+    transform: translateY(30px);
+    background-color: var(--orange);
+}
+
+.content-desc{
+    height: 50%;
+    overflow: scroll;
+    padding: 5px;
+}
+
+.content-desc::-webkit-scrollbar{
+    display: none;
+}
+/* 
+=======================
+    CARD IMG - START
+=======================
+*/
+.card .img {
+    height: 280px;
+    width: 100%;
+}
+
+.card .img img{
+    height: inherit;
+    width: inherit;
+}
+/* 
+=====================
+    CARD IMG - END
+=====================
+*/
+
+
+
+/* 
+==============
+    TRANSIÇÂO
+==============
+*/
+.card .arrow {
+    max-height: 30%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: var(--orange);
+    text-align: center;
+    border: none;
+    z-index: 1;
+}
+
+.card .arrow span{
+    font-size: 1rem;
+}
+
+.arrow .rede{
+    visibility: hidden;
+    margin: 10px;
+}
+
+.card:hover .rede{
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.rede ion-icon{
+    color: var(--blue);
+    pointer-events: none;
+}
+
+.rede ion-icon:hover {
+    color: #fff;
+}
+/* 
+============
+CARD -END
+============
+*/
+
+
+
+.cards-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projetos{
+    height: 80%;
+    width: 350px;
+    color: #fff;
+    background-image: linear-gradient(var(--light-red), var(--light-orange));
+    border: var(--light-red) solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+    gap: 10px;
+}
+
+.projetos:hover{
+    background-image: none;
+    background: 
+    -webkit-linear-gradient(-45deg, #Ec930E, #ff400044 80%),
+    -webkit-linear-gradient(150deg, #d06a48 50%, #E89320 20%);
+    transform: scale(1.1);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+.projetos-img{
+    height: 100%;
+    width: 100%;
+}
+
+.projetos-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.projetos h5{
+    color: var(--blue-marinho);
+    height: 200px;
+    width: 100%;
+    overflow: auto;
+    padding: 10px;
+}
+
+.projetos h5::-webkit-scrollbar{
+    display: none;
+}
+
+.projetos a{
+    margin: 10px;
+    padding: 5px 10px;
+    width: 90%;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.projetos a:hover {
+    color: var(--orange);
+    background-color: var(--blue-marinho);
+}
+
+.projetos a:focus{
+    color: var(--light-red);
+    background-color:var(--blue-marinho) ;
+}
+
+.nome{
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+
+.retorna{
+    position: fixed;
+    top: 90%;
+    z-index: 2;
+    font-size: 4em;
+    margin: 20px;
+}
+
+.footer-start{
+    margin-top: 150px;
+    width: 100%;
+}
+
+.retorna ion-icon{
+    color: var(--satur-orange);
+    font-size: larger;
+}
+
+.retorna ion-icon:hover{
+    color: var(--blue);
+}
+
+            /* 
+            ===========================
+                content main -end 
+            ===========================
+            */
+
+
+/* ============
+      FOOTER
+   ============ */
+   footer
+   {
+       background-image: linear-gradient(#8277c7, #9289ce, #a59cdd);
+       width: 100%;
+       height: 10vh;
+       height: auto;
+
+       color: white;
+   }
+   .footer-content
+   {
+    color: var(--blue);
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       text-align: center;
+    
+   }
+   .footer-content h3
+   {
+       font-size: 8em;
+       color: var(--satur-orange);
+       font-weight: 400;
+       text-transform: capitalize;
+       font-weight: bold;
+       letter-spacing: 3px;
+      
+   }
+   
+   .footer-content p
+   {
+       line-height: 28px;
+       font-size: 2.5em;
+       margin-bottom: 20px;
+   }
+   .socials
+   {
+       list-style: none;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin: 1rem 3rem;
+   }
+   .socials li
+   {
+       margin: 0 10px;
+   
+   }
+   .socials a
+   {
+       text-decoration: none;
+       color: #fff;
+       font-size: 1.1rem;
+   
+   }
+   .socials ion-icon{
+    color: var(--blue);
+   }
+   .socials ion-icon:hover{
+    color: var(--satur-orange);
+}
+   
+   .footer-bottom
+   {
+       color: var(--blue);
+       width: 100%;
+       padding: 20px 0;
+       text-align: center;
+   
+   }
+   .footer-bottom p 
+   {
+       font-size: 14px;
+       word-spacing: 2px;
+       text-transform: capitalize;
+   
+   }
+
+/* 
+   Footer - end
+*/
+
+/* 
+   Media - start
+*/
+
+@media (max-width:800px){
+
+    .container{
+        margin: 0;
+        width: 100%;
+    }
+
+    .secao-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card{
+        width: 100%;
+    }
+
+    .retorna{
+        top: 90%;
+        margin: 5px;
+    }
+
+    ion-icon{
+        color: var(--blue-marinho);
+    }
+
+    .texto{
+        text-align: center;
+        font-size: 3em;
+        padding: 30px;
+    }
+
+    .texto p{
+        font-size: 1.1rem;
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .projetos{
+        font-size: 1.2rem;
+        height: 500px;
+        width: 100%;
+    }
+
+    .projetos-img img{
+        height: 85%;
+    }
+
+}
+
+/* 
+    Media - end
+*/
+

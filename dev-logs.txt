@@ -1,0 +1,45 @@
+16/11/2022
+*On-livery - EDITADO E AJUSTADO A IMAGEM DO FOOTER - JOÃO VITOR
+*Area Logada - CSS AJUSTADO - JOÃK VITOR
+
+15/11/2022
+*On-livery - CRIADO E MODIFICADO O FOOTER DA PÁGINA - MATHEUS MONTEIRO
+
+14/11/2022
+*Startups / FINALIZADA A FUNÇÃO DE FILTRAGEM E ALINHAMENTO - FALTA CSS
+
+10/11/2022
+*Startups / ADICIONADO SISTEMA DE FILTRAGEM - FALTA JS E CSS
+
+09/11/2022
+*Index.html / OK - ATUALIZADO ESTRUTURA E CSS CONFORME FEEDBACK DO FABIANO
+*Quem Somos / OK - ATUALIZADO ESTRUTURA E CSS CONFORME FEEDBACK DO FABIANO
+*Startups / OK	- ATUALIZADO ESTRUTURA E CSS CONFORME FEEDBACK DO FABIANO
+*Contato / OK - - ATUALIZADO ESTRUTURA E CSS CONFORME FEEDBACK DO FABIANO
+*Login / Aguardando finalização - Jonathan - JS para alterar input type da senha
+*On-livery / - FINALIZADO POR JOÃO VITOR (ABERTO A MUDANÇAS)
+
+08/11/2022
+*Index.html / OK - Atualziado CSS conforme feedback do Fabiano
+*Quem Somos / OK
+*Startups / OK
+*Contato / OK - Atualziado CSS conforme feedback do Fabiano
+*Login / Aguardando finalização - Jonathan - JS para alterar input type da senha
+*On-livery / Aguardando - Gabriel Souza - Estrutura e organização
+
+07/11/2022
+*Index.html / OK
+*Quem Somos / OK
+*Startups / OK
+*Contato / OK
+*Login / Aguardando finalização - Jonathan - JS para alterar input type da senha
+*On-livery / Aguardando - Gabriel Souza - Estrutura e organização
+
+
+04/11/2022
+*Index.html / OK
+*Quem Somos / OK
+*Startups / OK
+*Contato / OK
+*Login / Aguardando finalização - Jonathan
+*On-livery / Aguardando - Gabriel Souza

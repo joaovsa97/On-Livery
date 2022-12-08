@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/components-style.css">
+    <link rel="stylesheet" href="css/area-logada.css">
+    <title>Área Logada</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="menuToggle">
+            <button><ion-icon name="person-circle"></ion-icon>
+                <p>Minhas Informações</p>
+            </button>
+        </div>
+        <div class="info" id="info-menu">
+            <div class="foto"><img src="images/images.png"></div>
+            <div class="profile">
+                <label for="nome">Nome: </label>
+                <h2 class="nome">Fulano D'Tal</h3>
+                <label for="Empresa">Empresa: </label>
+                <h2 class="Empresa">X</h3> 
+                <label for="Telefone">Teleone: </label>
+                <h4 class="Tel">(xx)xxxxx-xxxx</h4> 
+                <label for="email">E-mail: </label>
+                <h4 class="email">fulano123@email.com</p>   
+            </div>
+            <div class="config">
+                <a class="config-btn"><ion-icon name="settings-outline"></ion-icon>Configurações</a>
+                <a class="logout" href="login.html"><ion-icon name="log-out-sharp"></ion-icon>Sair</a>
+            </div>
+            
+        </div>
+
+    </section>
+    <section class="operacao">
+        <div class="projetos">
+            <div class="card-projeto">
+                <h3>Seus Projetos</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>nome</th>
+                            <th>data</th>
+                            <th class="note">observações</th>
+                            <th>Opções</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>projeto1</td>
+                            <td>10/11/2022</td>
+                            <td class="note">nada</td>
+                            <td>
+                                <div class="crud">
+                                    <button class="create"><ion-icon name="eye"></ion-icon></button>
+                                    <button class="edit"><ion-icon name="create"></ion-icon></button>
+                                    <button class="delete"><ion-icon name="trash"></ion-icon></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>projeto2</td>
+                            <td>10/11/2022</td>
+                            <td class="note">nada</td>
+                            <td>
+                                <div class="crud">
+                                    <button class="create"><ion-icon name="eye"></ion-icon></button>
+                                    <button class="edit"><ion-icon name="create"></ion-icon></button>
+                                    <button class="delete"><ion-icon name="trash"></ion-icon></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>projeto3</td>
+                            <td>10/11/2022</td>
+                            <td class="note">nada</td>
+                            <td>
+                                <div class="crud">
+                                    <button class="create"><ion-icon name="eye"></ion-icon></button>
+                                    <button class="edit"><ion-icon name="create"></ion-icon></button>
+                                    <button class="delete"><ion-icon name="trash"></ion-icon></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>projeto4</td>
+                            <td>09/11/2022</td>
+                            <td class="note">nada</td>
+                            <td>
+                                <div class="crud">
+                                    <button class="create"><ion-icon name="eye"></ion-icon></button>
+                                    <button class="edit"><ion-icon name="create"></ion-icon></button>
+                                    <button class="delete"><ion-icon name="trash"></ion-icon></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="chat">
+            <div class="historico"></div>
+            <div class="input">
+                <input type="text" name="chat-input" id="chat-input" placeholder="Digite Aqui...">
+                <button type="submit"><ion-icon name="send-sharp"></ion-icon></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/logged.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

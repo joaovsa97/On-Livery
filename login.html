@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/components-style.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Ainda não tem conta?<br>Cadastre-se e participe conosco!!</h1>
+                <img src="images/negocios.svg" class="left-login-image" alt="negocios animaçao">
+            </div>
+            <div class="rigth-login">
+                <div class="card-login active">
+                    <h1>LOGIN</h1>
+                   <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                   </div> 
+                   <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <div class=" senha">
+                    <input class="pw" type="password" name="senha" placeholder="Senha">
+                    <a class="revelar-pw"><ion-icon name="eye-outline"></ion-icon></a>
+                </div> 
+
+
+                </div>
+                <button class="btn-login"><a href="area-logada.html">Fazer Login</a></button>
+                <div class="cadastro">
+                    <p>Ainda não tem conta?<br>Cadastre-se e participe conosco!!</p>
+                    <button class="open btn-cadastro">Cadastre-se</button>
+                </div>
+                <a href="index.html" class="return"><ion-icon name="arrow-back-circle-outline"></ion-icon></a>
+                </div>
+                <div class="registro">
+                    <h1>Cadastro</h1>
+                       <div class="textfield">
+                        <input type="text" name="nome completo" placeholder="Nome Completo">
+                       </div> 
+                       <div class="textfield">
+                        <input type="text" name="e-mail" placeholder="E-mail">
+                        <br>
+                        <input type="text" name="nome de usuario" placeholder="Nome De Usuário">
+                        <br>
+                            <div class="senha">
+                            <input class="pw2" type="password" name="senha" placeholder="Senha">
+                            <a class="revelar-pw2"><ion-icon name="eye-outline"></ion-icon></a>
+                        </div>       
+                        <br>                        
+                        <div class="senha">
+                            <input class="pw3" type="password" name="senha" placeholder="Confirmar Senha">
+                            <a class="revelar-pw3"><ion-icon name="eye-outline"></ion-icon></a>
+                        </div> 
+                        <button class="close btn-cadastro">Cadastrar-se</button>
+                        <a class="fechar return"><ion-icon name="arrow-back-circle-outline"></ion-icon></a>
+                    </div>
+                </div> 
+            </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/login.js"></script>
+</body>
+
+</html>
